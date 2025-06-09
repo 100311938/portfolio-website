@@ -3,81 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Samuel Power | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-white shadow-md p-6">
-    <div class="max-w-4xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Your Name</h1>
-      <nav>
-        <a href="#about" class="mx-2 text-sm hover:text-blue-600">About</a>
-        <a href="#projects" class="mx-2 text-sm hover:text-blue-600">Projects</a>
-        <a href="#skills" class="mx-2 text-sm hover:text-blue-600">Skills</a>
-        <a href="#contact" class="mx-2 text-sm hover:text-blue-600">Contact</a>
+  <header class="bg-white shadow-md px-4 py-6">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <h1 class="text-2xl font-bold mb-2 sm:mb-0">Samuel Power</h1>
+      <nav class="flex flex-wrap justify-center sm:justify-end gap-2">
+        <a href="#about" class="text-sm hover:text-green-600 px-2">About</a>
+        <a href="#projects" class="text-sm hover:text-green-600 px-2">Projects</a>
+        <a href="#skills" class="text-sm hover:text-green-600 px-2">Skills</a>
+        <a href="#contact" class="text-sm hover:text-green-600 px-2">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- About -->
-  <section id="about" class="py-12">
+  <section id="about" class="py-12 px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-      <p class="text-gray-700 max-w-2xl mx-auto">
-        I'm a passionate web developer with experience in creating clean, responsive websites using modern technologies. I enjoy solving problems and turning ideas into reality.
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">About Me</h2>
+      <p class="text-base text-gray-700 max-w-2xl mx-auto">
+        I'm a passionate info tech student and I have spent years developing my grasp on, and my skills using all facets of technology. I have cultivated 
+        expertise in several disciplines including project design, database management and software & web development. I believe in creating clean, 
+        responsive projects using modern technologies. I enjoy solving problems and turning ideas into reality.
       </p>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-white py-12">
+  <section id="projects" class="bg-white py-12 px-4">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-          <h3 class="text-xl font-semibold">Project 1</h3>
-          <p class="text-sm text-gray-600">Brief description of the project. Built with [tech stack].</p>
-          <a href="#" class="text-blue-600 text-sm mt-2 inline-block">View Project →</a>
+        <div class="bg-gray-100 p-4 rounded-lg shadow-sm transition hover:shadow-md hover:ring-3 hover:ring-green-600">
+          <h3 class="text-xl font-semibold">Uninest Connect</h3>
+          <p class="text-sm text-gray-600">University-exclusive roommate finding platform and marketplace. Employs a combination of content-based and collaborative filtering. 
+            Primarily built with MongoDB - Express.js - React - Node.js. Deployed in a staging environment.</p>
+          <a href="#" class="text-green-600 text-sm mt-2 inline-block">View Project →</a>
+          <img src="uninest_connect.png" alt="Uninest_Connect Website">
         </div>
-        <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
-          <h3 class="text-xl font-semibold">Project 2</h3>
-          <p class="text-sm text-gray-600">Another project. Explain what it does and why it matters.</p>
-          <a href="#" class="text-blue-600 text-sm mt-2 inline-block">View Project →</a>
+        <div class="bg-gray-100 p-4 rounded-lg shadow-sm transition hover:shadow-md hover:ring-3 hover:ring-green-600">
+          <h3 class="text-xl font-semibold pb-2">Subnest</h3>
+          <p class="text-sm text-gray-600">Designed a webservice including architecture, feature specifications, UI prototypes, and user workflows for managing user's various subscriptions.
+             Subnest would allow users to keep track of all of their diverse subscriptions, including their costs, payment dates, completion dates and more.</p>
+          <a href="#" class="text-green-600 text-sm mt-2 inline-block">View Project →</a>
+          <img src="subnest.png" alt="Subnest Website Image">
+          <img src="subnest2.png" alt="Subnest Website Image 2" class=mt-5>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow-sm transition hover:shadow-md hover:ring-3 hover:ring-green-600">
+          <h3 class="text-xl font-semibold pb-2">Processing RPG</h3>
+          <p class="text-sm text-gray-600">Developed a simple 2D RPG using Java and the Processing library, featuring player movement, basic interaction, and three interconnected maps.
+            The player also has gold to be used at the shop to buy items that get added to the player's inventory which can be sorted and filtered.
+          </p>
+          <a href="#" class="text-green-600 text-sm mt-2 inline-block">View Project →</a>
+          <img src="processing_rpg.png" alt="Subnest Website Image">
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg shadow-sm transition hover:shadow-md hover:ring-3 hover:ring-green-600">
+          <h3 class="text-xl font-semibold pb-2">Vertical Search Engine</h3>
+          <p class="text-sm text-gray-600">Developed a vertical search engine using ElasticSearch and custom web scrapers to index and rank content from high-authority domains 
+            focused on environmental issues.
+          </p>
+          <a href="#" class="text-green-600 text-sm mt-2 inline-block">View Project →</a>
+          <img src="search_engine.png" alt="Environmental Vertical Search Engine">
+        </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-12">
+  <section id="skills" class="py-12 px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Skills</h2>
-      <div class="flex flex-wrap justify-center gap-4 mt-6">
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">HTML</span>
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">CSS</span>
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">JavaScript</span>
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">Tailwind</span>
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">React</span>
-        <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm">Node.js</span>
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Database Management</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Project Management</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Search Engine Optimization</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Software Development</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Systems Design</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">UI/UX Design</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Web Development</span>
+      </div>
+    </div>
+  </section>
+
+<!-- Languages -->
+  <section id="Languages" class="bg-white py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">Languages</h2>
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">CSS</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">HTML</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">JavaScript</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Java</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Kotlin</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">PosgreSQL</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies -->
+  <section id="Technologies" class="py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">Technologies</h2>
+      <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">ElasticSearch</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Git</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Node.js</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">React</span>
+        <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-sm">Tailwind</span>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-white py-12">
+  <section id="contact" class="bg-white py-12 px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
-      <p class="text-gray-700 mb-6">Feel free to reach out via email or connect on social media.</p>
-      <p class="text-blue-600"><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <h2 class="text-3xl font-semibold mb-4 border-t-4 border-green-400 inline-block pt-2">Contact</h2>
+      <p class="text-base text-gray-700 mb-6">Please feel free to reach out via email or connect on social media with any questions or inquiries.</p>
+      <p class="text-green-600 text-sm"><a href="mailto:samuel.power@student.kpu.ca">samuel.power@student.kpu.ca</a></p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-200 text-center text-sm p-4">
-    © 2025 Your Name. All rights reserved.
+    © 2025 Samuel Power. All rights reserved.
   </footer>
 
 </body>
 </html>
+``
